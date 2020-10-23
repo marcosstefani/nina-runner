@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driverClassName: "org.postgresql.Driver"
+    url: "jdbc:postgresql://localhost:15432/postgres"
+    username: "postgres"
+    password: "12345"
+    sql-script-encoding: "UTF-8"
+  jpa:
+    database-platform: "org.hibernate.dialect.PostgreSQL95Dialect"
+    generate-ddl: true
+    show-sql: true
