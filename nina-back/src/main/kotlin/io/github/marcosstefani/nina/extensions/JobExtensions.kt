@@ -5,7 +5,7 @@ import org.springframework.scheduling.support.CronSequenceGenerator
 import java.util.*
 
 fun Job.eligible() : Boolean {
-    val generator = CronSequenceGenerator("0 0 23 * * ?")
+    val generator = CronSequenceGenerator(this.cron)
     val next = generator.next(Date())
 
     return next.sameMinute()

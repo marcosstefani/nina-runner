@@ -10,12 +10,12 @@ data class Job (
         val id: BigInteger,
 
         @Column(nullable = false)
-        val name: String,
+        var name: String,
 
         @Column(nullable = false)
-        val cron: String,
+        var cron: String,
 
-        val active: Boolean = true,
+        var active: Boolean = true,
 
-        val running: Boolean = false
+        var running: Boolean = false
 )
